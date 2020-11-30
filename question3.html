@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Check the console</h1>
+    <script>
+        //algo for max
+let a = [34, 56, 23, 43]
+let max = 0
+for (i = 0; i < a.length; i++) {
+    if (max < a[i])
+        max = a[i]
+}
+console.log(max)
+let second_max = 0;
+
+for (i = 0; i < a.length; i++) {
+    if (second_max < a[i] && a[i] != max) {
+        second_max = a[i];
+    }
+
+}
+
+console.log(second_max)
+let thirdmax = 0
+for (i = 0; i < a.length; i++) {
+    if (thirdmax < a[i] && a[i] != second_max && a[i] != max) {
+        thirdmax = a[i];
+    }
+
+}
+console.log(thirdmax)
+
+        
+    
+    </script>
+</body>
+</html>
